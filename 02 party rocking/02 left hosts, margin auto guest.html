@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Solution 1 for crowded party - CSS Pro Layout System</title>
+<style type="text/css">
+<!--
+*{
+	padding :0;
+	margin  :0;
+}
+
+div.container{
+	width  :950px;
+	margin :0 auto;
+}
+
+div{
+	/* outline:1px solid red; */
+}
+
+.badboy{ /* Hidden as posible */
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
+}
+
+div.floor1{
+	background :#999;
+	margin-top :10px;
+}
+
+div.floor1 div.hosts{
+	float        :left;
+	width        :110px;
+	min-height   :300px;
+	margin-right :10px;
+	background   :#669;
+}
+
+div.floor1 div.guest-last{
+	margin-left :840px; /* 7x(110+10) */
+	min-height  :280px;
+	background  :#915;
+}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="floor1">
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="hosts">Left Panel (Hosts)</div>
+		<div class="guest-last">Right Pannel<br/>(Guest and Last)</div>
+		<div class="badboy"></div>
+	</div>
+</div>
+</body>
+</html>
