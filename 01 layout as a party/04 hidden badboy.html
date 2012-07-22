@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>03 Badboy can be good - CSS Pro Layout System</title>
+<title>04 Hidden BadBoy - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -16,9 +16,24 @@ div.container{
 }
 
 div{
-	outline :1px solid red;
+	/* outline :1px solid red; */
 }
 
+.badboy{ /* Hide as posible */
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+
+	/* FAQ: What is !important ?
+	 * The !important rule is a way to make your CSS cascade but also
+	 * have the rules you feel are most crucial always be applied. 
+	 * A rule that has the !important property will always be applied
+	 * no matter where that rule appears in the CSS document.
+	 */
+}
+
+/* Party at floor 1
+-------------------------------------------------- */
 div.floor1{
 	background :#999;
 	padding    :10px;
@@ -27,7 +42,7 @@ div.floor1{
 div.floor1 div.host{
 	float      :left;
 	width      :150px;
-	min-height :450px; /* over flow */
+	min-height :450px;
 	background :#696;
 }
 
@@ -37,12 +52,6 @@ div.floor1 div.guest{
 	background  :#915;
 }
 
-div.badboy{
-	width      :5px;
-	height     :5px;
-	clear      :both;
-	background :#ff7;
-}
 -->
 </style>
 </head>
