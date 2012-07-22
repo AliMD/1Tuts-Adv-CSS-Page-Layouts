@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>05 Spoiled Child (Nonor, loos) Problem - CSS Pro Layout System</title>
+<title>06 Anti Spoiled (ZedLoos) - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -20,16 +20,18 @@ div{
 }
 
 .badboy{
-	clear      :both;
-	width      :0 !important;
-	height     :0 !important;
+	clear  :both;
+	width  :0 !important;
+	height :0 !important;
 }
 
 div.floor1,
 div.floor2{
-	background :#999;
-	margin-top :10px;
-	/* padding    :10px; removed for see problem */
+	background     :#999;
+	margin-top     :10px;
+	/* Anti Spoiled or ZedLoos ! */
+	padding-top    :1px;
+	padding-bottom :1px;
 }
 
 /* Party at floor 1
@@ -42,10 +44,10 @@ div.floor1 div.host{
 }
 
 div.floor1 div.guest{
-	margin-left :155px;
-	min-height  :300px;
-	background  :#915;
-	/* add margin to guest (non float) to see problem */
+	margin-left   :155px;
+	min-height    :300px;
+	background    :#915;
+	/* Test of Spoiled child */
 	margin-top    :30px;
 	margin-bottom :30px;
 }
