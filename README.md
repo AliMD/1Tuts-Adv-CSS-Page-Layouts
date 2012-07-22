@@ -11,7 +11,6 @@ More learning at [1schools.com](http://www.1schools.com/)
 * [HTML5](http://ali.md/wiki/html5)
 * [CSS3](http://ali.md/css3ref)
 * [1Styles](http://ali.md/1styles)
-* [LESS](http://ali.md/less)
 * [JavaScript](http://ali.md/wiki/javascript)
 * [html5shiv](http://ali.md/html5shiv)
 
