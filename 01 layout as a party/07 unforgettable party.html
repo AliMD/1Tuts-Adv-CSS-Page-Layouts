@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>06 Anti Spoiled (ZedLoos) - CSS Pro Layout System</title>
+<title>07 Unforgettable Party - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -20,18 +20,24 @@ div{
 }
 
 .badboy{
-	clear  :both;
-	width  :0 !important;
-	height :0 !important;
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
 }
 
 div.floor1,
 div.floor2{
-	background     :#999;
-	margin-top     :10px;
-	/* Anti Spoiled or ZedLoos ! */
-	padding-top    :1px;
-	padding-bottom :1px;
+	background  :#999;
+	margin-top  :10px;
+	padding-top :1px; /* Anti Spoiled */
+}
+
+div.guest{
+	margin-top :5px; /* for Anti Spoiled test */
 }
 
 /* Party at floor 1
@@ -39,17 +45,14 @@ div.floor2{
 div.floor1 div.host{
 	float      :left;
 	width      :150px;
-	min-height :300px;
+	min-height :400px;
 	background :#696;
 }
 
 div.floor1 div.guest{
-	margin-left   :155px;
-	min-height    :300px;
-	background    :#915;
-	/* Test of Spoiled child */
-	margin-top    :30px;
-	margin-bottom :30px;
+	margin-left :155px;
+	min-height  :350px;
+	background  :#915;
 }
 
 /* Party at floor 2
@@ -57,13 +60,13 @@ div.floor1 div.guest{
 div.floor2 div.host{
 	float      :right;
 	width      :150px;
-	min-height :300px;
+	min-height :400px;
 	background :#696;
 }
 
 div.floor2 div.guest{
 	margin-right :155px;
-	min-height   :300px;
+	min-height   :350px;
 	background   :#915;
 }
 -->
