@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>07 Unforgettable Party - CSS Pro Layout System</title>
+<title>08 New Idea to Solve Problems - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -19,25 +19,34 @@ div{
 	/* outline:1px solid red; */
 }
 
+/*
+in this idea dont need to badboys.
 .badboy{
 	clear      :both;
 	width      :0 !important;
 	height     :0 !important;
-	min-height :0 !important;
-	min-width  :0 !important;
-	float      :none !important;
-	overflow   :hidden;
+}
+*/
+
+div.guest{
+	margin-top :5px; /* for Anti Spoiled test */
 }
 
 div.floor1,
 div.floor2{
-	background  :#999;
-	margin-top  :10px;
-	padding-top :1px; /* Anti Spoiled */
-}
-
-div.guest{
-	margin-top :5px; /* for Anti Spoiled test */
+	background :#999;
+	margin-top :10px;
+	/* 
+	* New idea for AntiSpoiled and BadBoy.
+	* remember all floors must have it.
+	*/
+	float      :left;
+	clear      :both; /* clear prevent the party. */
+	width      :100%;
+	/* Note
+	 * width:100% is optional.
+	 * and remember can make problem with padding and margin (overflow).
+	 */
 }
 
 /* Party at floor 1
@@ -77,12 +86,10 @@ div.floor2 div.guest{
 	<div class="floor1">
 		<div class="host">Left Panel (Host)</div>
 		<div class="guest">Content (Guest)</div>
-		<div class="badboy"></div>
 	</div>
 	<div class="floor2">
 		<div class="host">Right Panel (Host)</div>
 		<div class="guest">Content  (Guest)</div>
-		<div class="badboy"></div>
 	</div>
 </div>
 </body>
