@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>08 New Idea to Solve Problems - CSS Pro Layout System</title>
+<title>09 More Then One Host - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -19,64 +19,87 @@ div{
 	/* outline:1px solid red; */
 }
 
-/*
-in this idea dont need to badboys.
 .badboy{
 	clear      :both;
 	width      :0 !important;
 	height     :0 !important;
-}
-*/
-
-div.guest{
-	margin-top :5px; /* for Anti Spoiled test */
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
 }
 
 div.floor1,
-div.floor2{
+div.floor2,
+div.floor3{
 	background :#999;
 	margin-top :10px;
-	/* 
-	* New idea for AntiSpoiled and BadBoy.
-	* remember all floors must have it.
-	*/
-	float      :left;
-	clear      :both; /* clear prevent the party. */
-	width      :100%;
-	/* Note
-	 * width:100% is optional.
-	 * and remember can make problem with padding and margin (overflow).
-	 */
+	padding-top: 1px;
 }
 
 /* Party at floor 1
 -------------------------------------------------- */
-div.floor1 div.host{
+div.floor1 div.host1{
 	float      :left;
 	width      :150px;
 	min-height :400px;
 	background :#696;
 }
 
+div.floor1 div.host2{
+	float      :right;
+	width      :150px;
+	min-height :430px;
+	background :#669;
+}
+
 div.floor1 div.guest{
-	margin-left :155px;
-	min-height  :350px;
-	background  :#915;
+	margin     :0 155px; /* left and right */
+	min-height :350px;
+	background :#915;
+	margin-top :10px;
 }
 
 /* Party at floor 2
 -------------------------------------------------- */
-div.floor2 div.host{
-	float      :right;
+div.floor2 div.host1{
+	float      :left;
 	width      :150px;
 	min-height :400px;
 	background :#696;
 }
 
+div.floor2 div.host2{
+	float       :left;
+	width       :150px;
+	min-height  :430px;
+	margin-left :5px;
+	background  :#669;
+}
+
 div.floor2 div.guest{
-	margin-right :155px;
-	min-height   :350px;
-	background   :#915;
+	margin-left :310px;
+	min-height  :350px;
+	background  :#915;
+}
+
+/* Party at floor 3
+-------------------------------------------------- */
+div.floor3 div.host1,
+div.floor3 div.host2,
+div.floor3 div.host3,
+div.floor3 div.host4{
+	float        :left;
+	width        :150px;
+	min-height   :300px;
+	margin-right :5px;
+	background   :#669;
+}
+
+div.floor3 div.guest{
+	margin-left :620px; /* 4x(150+5) */
+	min-height  :280px;
+	background  :#915;
 }
 -->
 </style>
@@ -84,12 +107,24 @@ div.floor2 div.guest{
 <body>
 <div class="container">
 	<div class="floor1">
-		<div class="host">Left Panel (Host)</div>
-		<div class="guest">Content (Guest)</div>
+		<div class="host1">Left Panel (Host)</div>
+		<div class="host2">Right Panel (Host)</div>
+		<div class="guest">Center Pannel (Guest)</div>
+		<div class="badboy"></div>
 	</div>
 	<div class="floor2">
-		<div class="host">Right Panel (Host)</div>
-		<div class="guest">Content  (Guest)</div>
+		<div class="host1">Left Panel 1 (Host)</div>
+		<div class="host2">Left Panel 2 (Host)</div>
+		<div class="guest">Right Pannel (Guest)</div>
+		<div class="badboy"></div>
+	</div>
+	<div class="floor3">
+		<div class="host1">Left Panel 1 (Host)</div>
+		<div class="host2">Left Panel 2 (Host)</div>
+		<div class="host3">Left Panel 3 (Host)</div>
+		<div class="host4">Left Panel 4 (Host)</div>
+		<div class="guest">Right Pannel (Guest)</div>
+		<div class="badboy"></div>
 	</div>
 </div>
 </body>
