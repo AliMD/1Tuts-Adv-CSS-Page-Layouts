@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Solution 1 for crowded party - CSS Pro Layout System</title>
+<title>Solution 2 for crowded party - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -43,7 +43,8 @@ div.floor1 div.hosts{
 }
 
 div.floor1 div.guest-last{
-	margin-left :840px; /* 7x(110+10) */
+	width       :110px;
+	margin-left :auto; /* Margin auto does not work without width */
 	min-height  :280px;
 	background  :#915;
 }
