@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>02 Problem in Party - CSS Pro Layout System</title>
+<style type="text/css">
+<!--
+*{
+	padding :0;
+	margin  :0;
+}
+
+div.container{
+	width  :950px;
+	margin :0 auto;
+}
+
+div{
+	outline :1px solid red;
+}
+
+div.floor1{
+	background :#999;
+	padding    :10px;
+}
+
+div.floor1 div.host{
+	float      :left;
+	width      :150px;
+	min-height :450px; /* over flow */
+	background :#696;
+}
+
+div.floor1 div.guest{
+	margin-left :155px;
+	min-height  :400px;
+	background  :#915;
+}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="floor1">
+		<div class="host">Left Panel (Host)</div>
+		<div class="guest">Content (Guest)</div>
+	</div>
+</div>
+</body>
+</html>
