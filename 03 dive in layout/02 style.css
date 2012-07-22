@@ -48,7 +48,10 @@ div.floor6,
 footer{
 	background :#999;
 	margin-top :10px;
-	padding :1px 0;
+	/* AntiSpoiled and Badboy */
+	float :left;
+	clear :both;
+	width :100%;
 }
 
 section.guest{
@@ -80,9 +83,11 @@ div.floor1 section.host2{
 }
 
 div.floor1 section.guest{
-	margin     :0 155px; /* left and right */
-	min-height :250px;
-	background :#915;
+	/* changed for keep other margins in line 57 */
+	margin-left  :155px;
+	margin-right :155px;
+	min-height   :250px;
+	background   :#915;
 }
 
 /* Party at floor 2
