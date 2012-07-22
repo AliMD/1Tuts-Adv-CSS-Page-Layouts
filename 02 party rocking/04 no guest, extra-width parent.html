@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Solution 3 for crowded party - CSS Pro Layout System</title>
+<title>Solution 4 for crowded party - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -32,22 +32,18 @@ div{
 div.floor1{
 	background :#999;
 	margin-top :10px;
-	direction: rtl; /* Create an exception for rtl (right to left) layout system */
+}
+
+div.floor1 div.extra-width{
+	width: 1000px; /* more then 8x(110+10) to prevent going to the next line or floor */
 }
 
 div.floor1 div.hosts{
-	float       :right;
-	width       :110px;
-	min-height  :300px;
-	margin-left :10px;
-	background  :#669;
-}
-
-div.floor1 div.guest-last{
+	float        :left;
 	width        :110px;
-	margin-right :auto; /* For rtl floors */
-	min-height   :280px;
-	background   :#915;
+	min-height   :300px;
+	margin-right :10px;
+	background   :#669;
 }
 -->
 </style>
@@ -55,15 +51,17 @@ div.floor1 div.guest-last{
 <body>
 <div class="container">
 	<div class="floor1">
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="hosts">Right Panel (Hosts)</div>
-		<div class="guest-last">Left Pannel<br/>(Guest and Last)</div>
-		<div class="badboy"></div>
+		<div class="extra-width">
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="hosts">Left Panel (Hosts)</div>
+			<div class="badboy"></div>
+		</div>
 	</div>
 </div>
 </body>
