@@ -1,7 +1,5 @@
 ##CSS Pro Layout System
-By Ali mihandoost
-
-`http://ali.md/cpls`
+Learning professional layout in css. `http://ali.md/cpls`
 
 More learning at [1schools.com](http://www.1schools.com/)
 
