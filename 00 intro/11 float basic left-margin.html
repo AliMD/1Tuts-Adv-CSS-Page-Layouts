@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>10 Float as a Hospitality - CSS Pro Layout System</title>
+<title>11 Float Basic Left,Margin - CSS Pro Layout System</title>
 <style type="text/css">
 <!--
 *{
@@ -10,41 +10,32 @@
 	margin  :0;
 }
 
-div.container{
-	width  :950px;
-	margin :0 auto;
+div.box1,
+div.box2{
+	width       :150px;
+	height      :200px;
+	color       :white;
+	font-size   :100px;
+	text-align  :center;
+	line-height :200px;
 }
 
-div{
-	outline :1px solid red;
-}
-
-div.floor1{
-	background :#999;
-	padding    :10px;
-}
-
-div.floor1 div.host{
+div.box1{
 	float      :left;
-	width      :150px;
-	min-height :400px;
-	background :#696;
+	background :darkmagenta;
 }
 
-div.floor1 div.guest{
-	margin-left :155px;
-	min-height  :450px;
-	background  :#915;
+div.box2{
+	margin-left :160px;
+	background  :darkorange;
 }
 -->
 </style>
 </head>
 <body>
-<div class="container">
-	<div class="floor1">
-		<div class="host">Left Panel (Host + Hospitality)</div>
-		<div class="guest">Content (Guest - Hospitality)</div>
-	</div>
-</div>
+
+<div class="box1">1</div>
+<div class="box2">2</div>
+
 </body>
 </html>
