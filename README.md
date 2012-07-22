@@ -1,6 +1,10 @@
 ##CSS Pro Layout System
 Learning professional layout in css. `http://ali.md/cpls`
 
+For start learning Check [history](https://github.com/alimd/css-pro-layout-system/commits/master/) and start from [commit "00 Intro - 01 float basic left-left"](https://github.com/alimd/css-pro-layout-system/commit/aca4622cfe9557d3f13da2392492d568b93bee15)
+
+Create an [issue](https://github.com/alimd/css-pro-layout-system/issues/new) for any question.
+
 More learning at [1schools.com](http://www.1schools.com/)
 
 ###Buliding Technologies
