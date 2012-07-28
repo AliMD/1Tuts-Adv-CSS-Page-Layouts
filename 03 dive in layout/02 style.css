@@ -48,14 +48,14 @@ div.floor6,
 footer{
 	background :#999;
 	margin-top :10px;
-	/* AntiSpoiled and Badboy */
+	/* AntiSpoiled(ZedLoos) and Badboy */
 	float :left;
 	clear :both;
 	width :100%;
 }
 
 section.guest{
-	/* Test of AntiSpoiled */
+	/* Test of AntiSpoiled (ZedLoos) */
 	margin-top    :10px;
 	margin-bottom :10px;
 }

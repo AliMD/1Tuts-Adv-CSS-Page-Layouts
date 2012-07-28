@@ -62,7 +62,7 @@ div.container section{
 header,
 footer,
 div.content{
-	/* Anti Spoiled childs */
+	/* AntiSpoiled (ZedLoos) */
 	padding :1px 0;
 }
 
