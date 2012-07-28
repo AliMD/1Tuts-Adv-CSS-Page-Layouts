@@ -1,9 +1,9 @@
 ##Ali.MD - CSS: Page Layouts
-Learning Page Layout in HTML with CSS. `http://ali.md/cpl`
+Learning Page Layout in HTML with CSS. `ali.md/cpl`
 
-For start learning Check [history](https://github.com/alimd/css-pro-layout-system/commits/master/) and start from [commit "00 Intro - 01 float basic left-left"](https://github.com/alimd/css-pro-layout-system/commit/aca4622cfe9557d3f13da2392492d568b93bee15)
+For start learning Check [history](https://github.com/alimd/CSS-Page-Layouts/commits/master/) and start from [commit "00 Intro - 01 float basic left-left"](https://github.com/alimd/CSS-Page-Layouts/commit/aca4622cfe9557d3f13da2392492d568b93bee15)
 
-Create an [issue](https://github.com/alimd/css-pro-layout-system/issues/new) for any question.
+Create an [issue](https://github.com/alimd/CSS-Page-Layouts/issues/new) for any question.
 
 ###Buliding Technologies
 * [HTML5](http://ali.md/wiki/html5)
