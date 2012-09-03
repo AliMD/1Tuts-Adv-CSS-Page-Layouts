@@ -158,7 +158,7 @@ div.floor5 section.guest{
 /* Party at floor 6
 -------------------------------------------------- */
 div.floor6 div.extra-width{
-	width: 1000px; /* more then 8x(110+10) to prevent going to the next line or floor */
+	width: 1000px; /* more than 8x(110+10) to prevent going to the next line or floor */
 }
 
 div.floor6 section.hosts{
