@@ -1,0 +1,32 @@
+body{
+	padding-top: 10px;
+	background-color: #ddd;
+}
+
+
+header,
+div.floor0,
+div.floor1,
+div.floor2,
+div.floor3,
+div.floor4,
+div.floor5,
+div.floor6,
+footer{
+	background :#999;
+	margin-top :10px;
+	outline : 2px dotted rgba(0,0,255,0.8);
+}
+
+section.hosts{
+	min-height :270px;
+	background :#696;
+}
+
+section.guest{
+	/* Test of AntiSpoiled (ZedLoos) */
+	margin-top    :10px;
+	margin-bottom :10px;
+	min-height :250px;
+	background :#915;
+}
