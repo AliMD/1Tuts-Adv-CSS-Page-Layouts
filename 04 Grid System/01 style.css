@@ -1,0 +1,15 @@
+body{
+	padding-top: 1px;
+}
+
+.container > div {
+	margin-top: 20px;
+	padding: 5px 0;
+	outline : 2px dotted rgba(0,0,255,0.8);
+	min-height: 150px;
+}
+
+.container div > div {
+	outline : 2px dashed rgba(255,0,0,0.8);
+	min-height: 150px;
+}
