@@ -60,7 +60,7 @@
 	}
 
 	/* Hide number or bullet in lists */
-	ol, ul {
+	ol, ul, menu {
 		list-style: none;
 	}
 
