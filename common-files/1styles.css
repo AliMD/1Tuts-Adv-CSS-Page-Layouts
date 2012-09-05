@@ -1,11 +1,6 @@
 /* 1styles CSS Layout helper by 1Devs, base on blueprintcss grid system */
 /* fork me : www.github.com/1devs/1styles */
 
-html, body {
-	width:100%;
-	height:100%;
-}
-
 /* A container should group all your columns. */
 .container {
   width: 950px;
@@ -173,21 +168,10 @@ input.w24, textarea.w24 { width: 938px; }
 }
 
 .zedloos {
-	padding: 1px 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .overhide {
-	overflow: hidden;
-}
-
-.dozd { /* Only for omid (microsoft edition). */
-	display: none !important;
-	visibility: hidden;
-	opacity: 0;
-	line-height: 0;
-	letter-spacing: 0;
-	color: transparent;
-	width: 0;
-	height: 0;
 	overflow: hidden;
 }
