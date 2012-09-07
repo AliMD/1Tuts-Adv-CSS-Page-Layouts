@@ -1,177 +1,334 @@
-/* 1styles CSS Layout helper by 1Devs, base on blueprintcss grid system */
-/* fork me : www.github.com/1devs/1styles */
+/* 
+ * Ali.MD - 1Styles
+ * http://ali.md/1styles
+ * Copyright (c) 2012 Ali Mihandoost under MIT License.
+ * fork me on github.
+ */
 
-/* A container should group all your columns. */
-.container {
-  width: 950px;
-  margin: 0 auto;
-}
-
-/*
-.cover {					/* IMPORTANT: Use this class at the beginning *//*
-	*width:inherit;			/* IE6-7 CSS Hack *//*
-	*display:inline-block;	/* IE6-7 CSS Hack *//*
-}
-*/
-.cover:after {				/* NOT Compatible with IE lte7 ! */
-	display:block;
-	content:"";
-	clear:both;
-	height:0;
-	width:0;
-}
-
-/* Columns
--------------------------------------------------------------- */
-
-/* Sets up basic grid floating and margin. */
-.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8, .w9, .w10, .w11, .w12, .w13, .w14, .w15, .w16, .w17, .w18, .w19, .w20, .w21, .w22, .w23 {
-  margin-right: 10px;
-}
-
-/* The last column in a row needs this class. */
-.last { margin-right: 0; }
-
-/* Use these classes to set the width of a column. */
-.w1 {width: 30px;}		.w2 {width: 70px;}		.w3 {width: 110px;}		.w4 {width: 150px;}		.w5 {width: 190px;}		.w6 {width: 230px;}
-.w7 {width: 270px;}		.w8 {width: 310px;}		.w9 {width: 350px;}		.w10 {width: 390px;}	.w11 {width: 430px;}	.w12 {width: 470px;}
-.w13 {width: 510px;}	.w14 {width: 550px;}	.w15 {width: 590px;}	.w16 {width: 630px;}	.w17 {width: 670px;}	.w18 {width: 710px;}
-.w19 {width: 750px;}	.w20 {width: 790px;}	.w21 {width: 830px;}	.w22 {width: 870px;}	.w23 {width: 910px;}	.w24 {width: 950px;}
-.wx {width: 9999px;}
-
-.f1 { font-size: 0.625em;	/* 10px */}
-.f2 { font-size: 0.75em;	/* 12px */}
-.f3 { font-size: 0.875em;	/* 14px */}
-.f4 { font-size: 1em;		/* 16px */}
-.f5 { font-size: 1.125em;	/* 18px */}
-.f6 { font-size: 1.25em;	/* 20px */}
-.f7 { font-size: 1.375em;	/* 22px */}
-.f8 { font-size: 1.5em;		/* 24px */}
-.f9 { font-size: 1.625em;	/* 26px */}
-.f10 { font-size: 1.75em;	/* 28px */}
-.f11 { font-size: 2em;		/* 32px */}
-.f12 { font-size: 2.25em;	/* 36px */}
-.f13 { font-size: 2.5em;	/* 40px */}
-.f14 { font-size: 3em;		/* 48px */}
-.f15 { font-size: 4em;		/* 64px */}
-.f16 { font-size: 5em;		/* 80px */}
-
-/* Use these classes to set the width of an input. */
-input.w1, textarea.w1, input.w2, textarea.w2, input.w3, textarea.w3, input.w4, textarea.w4, input.w5, textarea.w5, input.w6, textarea.w6, input.w7, textarea.w7, input.w8, textarea.w8, input.w9, textarea.w9, input.w10, textarea.w10, input.w11, textarea.w11, input.w12, textarea.w12, input.w13, textarea.w13, input.w14, textarea.w14, input.w15, textarea.w15, input.w16, textarea.w16, input.w17, textarea.w17, input.w18, textarea.w18, input.w19, textarea.w19, input.w20, textarea.w20, input.w21, textarea.w21, input.w22, textarea.w22, input.w23, textarea.w23, input.w24, textarea.w24 {
-  border-width: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-input.w1, textarea.w1 { width: 18px; }
-input.w2, textarea.w2 { width: 58px; }
-input.w3, textarea.w3 { width: 98px; }
-input.w4, textarea.w4 { width: 138px; }
-input.w5, textarea.w5 { width: 178px; }
-input.w6, textarea.w6 { width: 218px; }
-input.w7, textarea.w7 { width: 258px; }
-input.w8, textarea.w8 { width: 298px; }
-input.w9, textarea.w9 { width: 338px; }
-input.w10, textarea.w10 { width: 378px; }
-input.w11, textarea.w11 { width: 418px; }
-input.w12, textarea.w12 { width: 458px; }
-input.w13, textarea.w13 { width: 498px; }
-input.w14, textarea.w14 { width: 538px; }
-input.w15, textarea.w15 { width: 578px; }
-input.w16, textarea.w16 { width: 618px; }
-input.w17, textarea.w17 { width: 658px; }
-input.w18, textarea.w18 { width: 698px; }
-input.w19, textarea.w19 { width: 738px; }
-input.w20, textarea.w20 { width: 778px; }
-input.w21, textarea.w21 { width: 818px; }
-input.w22, textarea.w22 { width: 858px; }
-input.w23, textarea.w23 { width: 898px; }
-input.w24, textarea.w24 { width: 938px; }
-
-.ml1 { margin-left: 40px; }		.ml2 { margin-left: 80px; }		.ml3 { margin-left: 120px; }	.ml4 { margin-left: 160px; }
-.ml5 { margin-left: 200px; }	.ml6 { margin-left: 240px; }	.ml7 { margin-left: 280px; }	.ml8 { margin-left: 320px; }
-.ml9 { margin-left: 360px; }	.ml10 { margin-left: 400px; }	.ml11 { margin-left: 440px; }	.ml12 { margin-left: 480px; }
-.ml13 { margin-left: 520px; }	.ml14 { margin-left: 560px; }	.ml15 { margin-left: 600px; }	.ml16 { margin-left: 640px; }
-.ml17 { margin-left: 680px; }	.ml18 { margin-left: 720px; }	.ml19 { margin-left: 760px; }	.ml20 { margin-left: 800px; }
-.ml21 { margin-left: 840px; }	.ml22 { margin-left: 880px; }	.ml23 { margin-left: 920px; }	.ml24 { margin-left: 960px; }
-.mla { margin-left: auto; }
-
-.mr1 { margin-right: 40px; }	.mr2 { margin-right: 80px; }	.mr3 { margin-right: 120px; }	.mr4 { margin-right: 160px; }
-.mr5 { margin-right: 200px; }	.mr6 { margin-right: 240px; }	.mr7 { margin-right: 280px; }	.mr8 { margin-right: 320px; }
-.mr9 { margin-right: 360px; }	.mr10 { margin-right: 400px; }	.mr11 { margin-right: 440px; }	.mr12 { margin-right: 480px; }
-.mr13 { margin-right: 520px; }	.mr14 { margin-right: 560px; }	.mr15 { margin-right: 600px; }	.mr16 { margin-right: 640px; }
-.mr17 { margin-right: 680px; }	.mr18 { margin-right: 720px; }	.mr19 { margin-right: 760px; }	.mr20 { margin-right: 800px; }
-.mr21 { margin-right: 840px; }	.mr22 { margin-right: 880px; }	.mr23 { margin-right: 920px; }	.mr24 { margin-right: 960px; }
-.mra { margin-right: auto; }
-
-/* Add these to a column to append empty cols. */
-
-.pr1 { padding-right: 40px; }	.pr2 { padding-right: 80px; }	.pr3 { padding-right: 120px; }	.pr4 { padding-right: 160px; }
-.pr5 { padding-right: 200px; }	.pr6 { padding-right: 240px; }	.pr7 { padding-right: 280px; }	.pr8 { padding-right: 320px; }
-.pr9 { padding-right: 360px; }	.pr10 { padding-right: 400px; }	.pr11 { padding-right: 440px; }	.pr12 { padding-right: 480px; }
-.pr13 { padding-right: 520px; }	.pr14 { padding-right: 560px; }	.pr15 { padding-right: 600px; }	.pr16 { padding-right: 640px; }
-.pr17 { padding-right: 680px; }	.pr18 { padding-right: 720px; }	.pr19 { padding-right: 760px; }	.pr20 { padding-right: 800px; }
-.pr21 { padding-right: 840px; }	.pr22 { padding-right: 880px; }	.pr23 { padding-right: 920px; }
-
-/* Add these to a column to prepend empty cols. */
-
-.pl1 { padding-left: 40px; }	.pl2 { padding-left: 80px; }	.pl3 { padding-left: 120px; }	.pl4 { padding-left: 160px; }
-.pl5 { padding-left: 200px; }	.pl6 { padding-left: 240px; }	.pl7 { padding-left: 280px; }	.pl8 { padding-left: 320px; }
-.pl9 { padding-left: 360px; }	.pl10 { padding-left: 400px; }	.pl11 { padding-left: 440px; }	.pl12 { padding-left: 480px; }
-.pl13 { padding-left: 520px; }	.pl14 { padding-left: 560px; }	.pl15 { padding-left: 600px; }	.pl16 { padding-left: 640px; }
-.pl17 { padding-left: 680px; }	.pl18 { padding-left: 720px; }	.pl19 { padding-left: 760px; }	.pl20 { padding-left: 800px; }
-.pl21 { padding-left: 840px; }	.pl22 { padding-left: 880px; }	.pl23 { padding-left: 920px; }
-
-.pt1 { padding-top: 0.125em;	/* 2px */}
-.pt2 { padding-top: 0.25em;		/* 4px */}
-.pt3 { padding-top: 0.25em;		/* 6px */}
-.pt4 { padding-top: 0.5em;		/* 8px */}
-.pt5 { padding-top: 0.625em;	/* 10px */}
-.pt6 { padding-top: 0.75em;		/* 12px */}
-.pt7 { padding-top: 1em;		/* 16px */}
-.pt8 { padding-top: 1.25em;		/* 20px */}
-.pt9 { padding-top: 1.5em;		/* 24px */}
-.pt10 { padding-top: 1.75em;	/* 28px */}
-.pt11 { padding-top: 2em;		/* 32px */}
-.pt12 { padding-top: 2.5px;		/* 40px */}
-
-.pb1 { padding-bottom: 0.125em;	/* 2px */}
-.pb2 { padding-bottom: 0.25em;	/* 4px */}
-.pb3 { padding-bottom: 0.25em;	/* 6px */}
-.pb4 { padding-bottom: 0.5em;	/* 8px */}
-.pb5 { padding-bottom: 0.625em;	/* 10px */}
-.pb6 { padding-bottom: 0.75em;	/* 12px */}
-.pb7 { padding-bottom: 1em;		/* 16px */}
-.pb8 { padding-bottom: 1.25em;	/* 20px */}
-.pb9 { padding-bottom: 1.5em;	/* 24px */}
-.pb10 { padding-bottom: 1.75em;	/* 28px */}
-.pb11 { padding-bottom: 2em;	/* 32px */}
-.pb12 { padding-bottom: 2.5px;	/* 40px */}
-
-/* floating layout
--------------------------------------------------------------- */
-.left { float:left; }
-
-.right { float:right; }
-
-.clear {
-	clear:both;
-}
-
-.badboy {
-	clear:both;
-	width:0 !important;
-	height:0 !important;
-	min-height:0 !important;
-	min-width:0 !important;
-	overflow:hidden;
-}
-
-.zedloos {
-	padding-top: 1px;
-	padding-bottom: 1px;
-}
-
-.overhide {
-	overflow: hidden;
-}
+.container{width:950px;margin:0 auto}
+.left{float:left}
+.right{float:right}
+.zedloos{padding-top:1px;padding-bottom:1px}
+.cover:before,.cover:after{content:"";display:block;height:0}
+.cover:after{clear:both}
+.badboy{clear:both;width:0 !important;height:0 !important;min-height:0 !important;min-width:0 !important;overflow:hidden}
+.f1{font-size:.125em}
+.f2{font-size:.25em}
+.f3{font-size:.375em}
+.f4{font-size:.5em}
+.f5{font-size:.625em}
+.f6{font-size:.75em}
+.f7{font-size:.875em}
+.f8{font-size:1em}
+.f9{font-size:1.125em}
+.f10{font-size:1.25em}
+.f11{font-size:1.375em}
+.f12{font-size:1.5em}
+.f13{font-size:1.625em}
+.f14{font-size:1.75em}
+.f15{font-size:1.875em}
+.f16{font-size:2em}
+.f17{font-size:2.125em}
+.f18{font-size:2.25em}
+.f19{font-size:2.375em}
+.f20{font-size:2.5em}
+.f21{font-size:2.625em}
+.f22{font-size:2.75em}
+.f23{font-size:2.875em}
+.f24{font-size:3em}
+.f25{font-size:3.125em}
+.f26{font-size:3.25em}
+.f27{font-size:3.375em}
+.f28{font-size:3.5em}
+.f29{font-size:3.625em}
+.f30{font-size:3.75em}
+.f31{font-size:3.875em}
+.f32{font-size:4em}
+.f33{font-size:4.125em}
+.f34{font-size:4.25em}
+.f35{font-size:4.375em}
+.f36{font-size:4.5em}
+.f37{font-size:4.625em}
+.f38{font-size:4.75em}
+.f39{font-size:4.875em}
+.f40{font-size:5em}
+.w1{width:30px;margin-right:10px}
+input.w1, textarea.w1{width:18px;border-width:1px;padding-left:5px;padding-right:5px}
+.h1{height:10px}
+.mh1{min-height:10px}
+.ml1{margin-left:40px}
+.mr1{margin-right:40px}
+.mt1{margin-top:10px}
+.mb1{margin-bottom:10px}
+.pl1{padding-left:40px}
+.pr1{padding-right:40px}
+.pt1{padding-top:10px}
+.pb1{padding-bottom:10px}
+.w2{width:70px;margin-right:10px}
+input.w2, textarea.w2{width:58px;border-width:1px;padding-left:5px;padding-right:5px}
+.h2{height:20px}
+.mh2{min-height:20px}
+.ml2{margin-left:80px}
+.mr2{margin-right:80px}
+.mt2{margin-top:20px}
+.mb2{margin-bottom:20px}
+.pl2{padding-left:80px}
+.pr2{padding-right:80px}
+.pt2{padding-top:20px}
+.pb2{padding-bottom:20px}
+.w3{width:110px;margin-right:10px}
+input.w3, textarea.w3{width:98px;border-width:1px;padding-left:5px;padding-right:5px}
+.h3{height:30px}
+.mh3{min-height:30px}
+.ml3{margin-left:120px}
+.mr3{margin-right:120px}
+.mt3{margin-top:30px}
+.mb3{margin-bottom:30px}
+.pl3{padding-left:120px}
+.pr3{padding-right:120px}
+.pt3{padding-top:30px}
+.pb3{padding-bottom:30px}
+.w4{width:150px;margin-right:10px}
+input.w4, textarea.w4{width:138px;border-width:1px;padding-left:5px;padding-right:5px}
+.h4{height:40px}
+.mh4{min-height:40px}
+.ml4{margin-left:160px}
+.mr4{margin-right:160px}
+.mt4{margin-top:40px}
+.mb4{margin-bottom:40px}
+.pl4{padding-left:160px}
+.pr4{padding-right:160px}
+.pt4{padding-top:40px}
+.pb4{padding-bottom:40px}
+.w5{width:190px;margin-right:10px}
+input.w5, textarea.w5{width:178px;border-width:1px;padding-left:5px;padding-right:5px}
+.h5{height:50px}
+.mh5{min-height:50px}
+.ml5{margin-left:200px}
+.mr5{margin-right:200px}
+.mt5{margin-top:50px}
+.mb5{margin-bottom:50px}
+.pl5{padding-left:200px}
+.pr5{padding-right:200px}
+.pt5{padding-top:50px}
+.pb5{padding-bottom:50px}
+.w6{width:230px;margin-right:10px}
+input.w6, textarea.w6{width:218px;border-width:1px;padding-left:5px;padding-right:5px}
+.h6{height:60px}
+.mh6{min-height:60px}
+.ml6{margin-left:240px}
+.mr6{margin-right:240px}
+.mt6{margin-top:60px}
+.mb6{margin-bottom:60px}
+.pl6{padding-left:240px}
+.pr6{padding-right:240px}
+.pt6{padding-top:60px}
+.pb6{padding-bottom:60px}
+.w7{width:270px;margin-right:10px}
+input.w7, textarea.w7{width:258px;border-width:1px;padding-left:5px;padding-right:5px}
+.h7{height:70px}
+.mh7{min-height:70px}
+.ml7{margin-left:280px}
+.mr7{margin-right:280px}
+.mt7{margin-top:70px}
+.mb7{margin-bottom:70px}
+.pl7{padding-left:280px}
+.pr7{padding-right:280px}
+.pt7{padding-top:70px}
+.pb7{padding-bottom:70px}
+.w8{width:310px;margin-right:10px}
+input.w8, textarea.w8{width:298px;border-width:1px;padding-left:5px;padding-right:5px}
+.h8{height:80px}
+.mh8{min-height:80px}
+.ml8{margin-left:320px}
+.mr8{margin-right:320px}
+.mt8{margin-top:80px}
+.mb8{margin-bottom:80px}
+.pl8{padding-left:320px}
+.pr8{padding-right:320px}
+.pt8{padding-top:80px}
+.pb8{padding-bottom:80px}
+.w9{width:350px;margin-right:10px}
+input.w9, textarea.w9{width:338px;border-width:1px;padding-left:5px;padding-right:5px}
+.h9{height:90px}
+.mh9{min-height:90px}
+.ml9{margin-left:360px}
+.mr9{margin-right:360px}
+.mt9{margin-top:90px}
+.mb9{margin-bottom:90px}
+.pl9{padding-left:360px}
+.pr9{padding-right:360px}
+.pt9{padding-top:90px}
+.pb9{padding-bottom:90px}
+.w10{width:390px;margin-right:10px}
+input.w10, textarea.w10{width:378px;border-width:1px;padding-left:5px;padding-right:5px}
+.h10{height:100px}
+.mh10{min-height:100px}
+.ml10{margin-left:400px}
+.mr10{margin-right:400px}
+.mt10{margin-top:100px}
+.mb10{margin-bottom:100px}
+.pl10{padding-left:400px}
+.pr10{padding-right:400px}
+.pt10{padding-top:100px}
+.pb10{padding-bottom:100px}
+.w11{width:430px;margin-right:10px}
+input.w11, textarea.w11{width:418px;border-width:1px;padding-left:5px;padding-right:5px}
+.h11{height:110px}
+.mh11{min-height:110px}
+.ml11{margin-left:440px}
+.mr11{margin-right:440px}
+.mt11{margin-top:110px}
+.mb11{margin-bottom:110px}
+.pl11{padding-left:440px}
+.pr11{padding-right:440px}
+.pt11{padding-top:110px}
+.pb11{padding-bottom:110px}
+.w12{width:470px;margin-right:10px}
+input.w12, textarea.w12{width:458px;border-width:1px;padding-left:5px;padding-right:5px}
+.h12{height:120px}
+.mh12{min-height:120px}
+.ml12{margin-left:480px}
+.mr12{margin-right:480px}
+.mt12{margin-top:120px}
+.mb12{margin-bottom:120px}
+.pl12{padding-left:480px}
+.pr12{padding-right:480px}
+.pt12{padding-top:120px}
+.pb12{padding-bottom:120px}
+.w13{width:510px;margin-right:10px}
+input.w13, textarea.w13{width:498px;border-width:1px;padding-left:5px;padding-right:5px}
+.h13{height:130px}
+.mh13{min-height:130px}
+.ml13{margin-left:520px}
+.mr13{margin-right:520px}
+.mt13{margin-top:130px}
+.mb13{margin-bottom:130px}
+.pl13{padding-left:520px}
+.pr13{padding-right:520px}
+.pt13{padding-top:130px}
+.pb13{padding-bottom:130px}
+.w14{width:550px;margin-right:10px}
+input.w14, textarea.w14{width:538px;border-width:1px;padding-left:5px;padding-right:5px}
+.h14{height:140px}
+.mh14{min-height:140px}
+.ml14{margin-left:560px}
+.mr14{margin-right:560px}
+.mt14{margin-top:140px}
+.mb14{margin-bottom:140px}
+.pl14{padding-left:560px}
+.pr14{padding-right:560px}
+.pt14{padding-top:140px}
+.pb14{padding-bottom:140px}
+.w15{width:590px;margin-right:10px}
+input.w15, textarea.w15{width:578px;border-width:1px;padding-left:5px;padding-right:5px}
+.h15{height:150px}
+.mh15{min-height:150px}
+.ml15{margin-left:600px}
+.mr15{margin-right:600px}
+.mt15{margin-top:150px}
+.mb15{margin-bottom:150px}
+.pl15{padding-left:600px}
+.pr15{padding-right:600px}
+.pt15{padding-top:150px}
+.pb15{padding-bottom:150px}
+.w16{width:630px;margin-right:10px}
+input.w16, textarea.w16{width:618px;border-width:1px;padding-left:5px;padding-right:5px}
+.h16{height:160px}
+.mh16{min-height:160px}
+.ml16{margin-left:640px}
+.mr16{margin-right:640px}
+.mt16{margin-top:160px}
+.mb16{margin-bottom:160px}
+.pl16{padding-left:640px}
+.pr16{padding-right:640px}
+.pt16{padding-top:160px}
+.pb16{padding-bottom:160px}
+.w17{width:670px;margin-right:10px}
+input.w17, textarea.w17{width:658px;border-width:1px;padding-left:5px;padding-right:5px}
+.h17{height:170px}
+.mh17{min-height:170px}
+.ml17{margin-left:680px}
+.mr17{margin-right:680px}
+.mt17{margin-top:170px}
+.mb17{margin-bottom:170px}
+.pl17{padding-left:680px}
+.pr17{padding-right:680px}
+.pt17{padding-top:170px}
+.pb17{padding-bottom:170px}
+.w18{width:710px;margin-right:10px}
+input.w18, textarea.w18{width:698px;border-width:1px;padding-left:5px;padding-right:5px}
+.h18{height:180px}
+.mh18{min-height:180px}
+.ml18{margin-left:720px}
+.mr18{margin-right:720px}
+.mt18{margin-top:180px}
+.mb18{margin-bottom:180px}
+.pl18{padding-left:720px}
+.pr18{padding-right:720px}
+.pt18{padding-top:180px}
+.pb18{padding-bottom:180px}
+.w19{width:750px;margin-right:10px}
+input.w19, textarea.w19{width:738px;border-width:1px;padding-left:5px;padding-right:5px}
+.h19{height:190px}
+.mh19{min-height:190px}
+.ml19{margin-left:760px}
+.mr19{margin-right:760px}
+.mt19{margin-top:190px}
+.mb19{margin-bottom:190px}
+.pl19{padding-left:760px}
+.pr19{padding-right:760px}
+.pt19{padding-top:190px}
+.pb19{padding-bottom:190px}
+.w20{width:790px;margin-right:10px}
+input.w20, textarea.w20{width:778px;border-width:1px;padding-left:5px;padding-right:5px}
+.h20{height:200px}
+.mh20{min-height:200px}
+.ml20{margin-left:800px}
+.mr20{margin-right:800px}
+.mt20{margin-top:200px}
+.mb20{margin-bottom:200px}
+.pl20{padding-left:800px}
+.pr20{padding-right:800px}
+.pt20{padding-top:200px}
+.pb20{padding-bottom:200px}
+.w21{width:830px;margin-right:10px}
+input.w21, textarea.w21{width:818px;border-width:1px;padding-left:5px;padding-right:5px}
+.h21{height:210px}
+.mh21{min-height:210px}
+.ml21{margin-left:840px}
+.mr21{margin-right:840px}
+.mt21{margin-top:210px}
+.mb21{margin-bottom:210px}
+.pl21{padding-left:840px}
+.pr21{padding-right:840px}
+.pt21{padding-top:210px}
+.pb21{padding-bottom:210px}
+.w22{width:870px;margin-right:10px}
+input.w22, textarea.w22{width:858px;border-width:1px;padding-left:5px;padding-right:5px}
+.h22{height:220px}
+.mh22{min-height:220px}
+.ml22{margin-left:880px}
+.mr22{margin-right:880px}
+.mt22{margin-top:220px}
+.mb22{margin-bottom:220px}
+.pl22{padding-left:880px}
+.pr22{padding-right:880px}
+.pt22{padding-top:220px}
+.pb22{padding-bottom:220px}
+.w23{width:910px;margin-right:10px}
+input.w23, textarea.w23{width:898px;border-width:1px;padding-left:5px;padding-right:5px}
+.h23{height:230px}
+.mh23{min-height:230px}
+.ml23{margin-left:920px}
+.mr23{margin-right:920px}
+.mt23{margin-top:230px}
+.mb23{margin-bottom:230px}
+.pl23{padding-left:920px}
+.pr23{padding-right:920px}
+.pt23{padding-top:230px}
+.pb23{padding-bottom:230px}
+.w24{width:950px}
+.wx{width:9999px}
+.last{margin-right:0}
+.overhide{overflow: hidden;}
