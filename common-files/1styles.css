@@ -54,6 +54,9 @@
 .f38{font-size:4.75em}
 .f39{font-size:4.875em}
 .f40{font-size:5em}
+.w0{width: 0}
+.h0{height: 0}
+.mh0{min-height: 0}
 .w1{width:30px;margin-right:10px}
 input.w1, textarea.w1{width:18px;border-width:1px;padding-left:5px;padding-right:5px}
 .h1{height:10px}
