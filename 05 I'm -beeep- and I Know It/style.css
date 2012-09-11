@@ -1,0 +1,68 @@
+/* Guide
+-------------------------- */
+body {
+	background-image: url('images/backguid.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+body > * {
+	outline: 1px dashed blue;
+}
+
+body > * > * {
+	outline: 2px dotted red;
+}
+
+body > * > * * {
+	outline: 2px dashed green;
+}
+
+
+/* Layout
+-------------------------- */
+
+div.containers{
+
+}
+
+header.main {
+	min-height: 85px;
+}
+
+header.main h1.logo {
+	text-indent: 100%;
+	overflow: hidden;
+}
+
+div.banner div.slide {
+	min-height: 440px;
+}
+
+div.content {
+	min-height: 980px;
+}
+
+div.content section.purchase {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.footer {
+	min-height: 355px;
+}
+div.copyright {
+	min-height: 60px;
+
+}
+
+
+/* modules
+-------------------------- */
+
+a.btn{
+	display: block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
