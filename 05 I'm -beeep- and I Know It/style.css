@@ -22,25 +22,20 @@ body > * > * * {
 /* Layout
 -------------------------- */
 
-div.containers{
-
+div.containers {
+	
 }
 
-header.main {
-	min-height: 85px;
+section.banner {
+	min-height : 440px;
 }
 
-header.main h1.logo {
-	text-indent: 100%;
-	overflow: hidden;
+section.banner .train {
+	min-height : inherit;
 }
 
-div.banner div.slide {
-	min-height: 440px;
-}
-
-div.content {
-	min-height: 980px;
+section.banner div.slide {
+	min-height : inherit;
 }
 
 div.content section.purchase {
@@ -49,10 +44,11 @@ div.content section.purchase {
 }
 
 div.footer {
-	min-height: 355px;
+	min-height: 350px;
 }
+
 div.copyright {
-	min-height: 60px;
+	min-height: 50px;
 
 }
 
