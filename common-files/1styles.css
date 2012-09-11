@@ -8,6 +8,8 @@
 .container{width:950px;margin:0 auto}
 .left{float:left}
 .right{float:right}
+.mla{margin-left:auto}
+.mra{margin-right:auto}
 .zedloos{padding-top:1px;padding-bottom:1px}
 .cover:before,.cover:after{content:"";display:block;height:0}
 .cover:after{clear:both}
