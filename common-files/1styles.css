@@ -54,6 +54,7 @@ table{border-collapse:collapse;border-spacing:0}
 .rel,.relative{position:relative}
 .abs,.absolute{position:absolute}
 .fix,.fixed{position:fixed}
+.block{display:block}
 .cover{*zoom:1;}
 .cover:before,.cover:after{content:" ";display:table}
 .cover:after{clear:both}
